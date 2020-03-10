@@ -16,4 +16,5 @@ Tested with:
 * Wireless DW1560, NGFF Broadcom BCM4352 802.11ac with PCID [14e4:43b1]
 * CPU i7-8650U : use https://github.com/stevezhengshiqi/one-key-cpufriend for correct power-state/energy saving
 
+clover r5105 from https://github.com/CloverHackyColor/CloverBootloader
 
