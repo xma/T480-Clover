@@ -1,4 +1,4 @@
-Clover for Lenovo ThinkPad T480
+Lenovo ThinkPad T480 hackintosh
 
 
 
@@ -12,9 +12,9 @@ Working (compared to other setup I've found):
 
 Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
-* macOS 10.15.4 (19E266)
+* macOS 10.15.4 (19E287)
 * Wireless DW1560, NGFF Broadcom BCM4352 802.11ac with PCID [14e4:43b1]
 * CPU i7-8650U : use https://github.com/stevezhengshiqi/one-key-cpufriend for correct power-state/energy saving
 
-Clover r5109 from https://github.com/CloverHackyColor/CloverBootloader
+Clover from https://github.com/CloverHackyColor/CloverBootloader
 
