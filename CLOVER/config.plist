@@ -469,7 +469,7 @@
 				<key>framebuffer-con2-enable</key>
 				<integer>1</integer>
 				<key>framebuffer-con2-alldata</key>
-				<string>&lt;02040a00 00080000 87010000&gt;</string>
+				<data>AgQKAAAIAACHAQAA</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
