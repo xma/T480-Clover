@@ -30,6 +30,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PTSWAK", 0x00000000)
     External (RMCF.XPEE, IntObj)    // (from opcode)
     External (ZPTS, MethodObj)    // 1 Arguments (from opcode)
     External (ZWAK, MethodObj)    // 1 Arguments (from opcode)
+    External(EXT4, MethodObj)
 
     Method (_PTS, 1, NotSerialized)  // _PTS: Prepare To Sleep
     {
@@ -88,7 +89,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PTSWAK", 0x00000000)
             Arg0 = 0x03
         }
 
-        Local0 = ZWAK (Arg0)
+        // Local0 = ZWAK (Arg0)
         If (CondRefOf (\RMCF.DPTS))
         {
             If (\RMCF.DPTS)
@@ -111,6 +112,12 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PTSWAK", 0x00000000)
             }
         }
 
+        If (CondRefOf(EXT4))
+        {
+            EXT4(Arg0)
+        }
+
+        Local0 = ZWAK (Arg0)
         Return (Local0)
     }
 }
