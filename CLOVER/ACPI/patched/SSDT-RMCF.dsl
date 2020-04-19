@@ -41,7 +41,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_RMCF", 0x00000000)
         Name (DPTS, Zero)
         Name (SHUT, One)
         Name (XPEE, One)
-        Name (SSTF, Zero)
+        Name (SSTF, One)
     }
 }
 
