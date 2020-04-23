@@ -9,6 +9,7 @@ Working (compared to other setup I've found):
 * Brightness Hotkey F5,F6
 * Fixed LED blinking after WAKE/SLEEP
 * FAN speed in HWMonitor
+* No color banding, Display is correctly seen as 24-Bit Color (ARGB8888) : issue reported by @bugraduz 
 
 Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
