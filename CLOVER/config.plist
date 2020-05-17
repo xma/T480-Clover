@@ -105,7 +105,17 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q15,0,N) to XQ15</string>
+					<string>Change Method(_Q6A,0,N) to XQ6A - F4 microphone mute</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E2QQA=</data>
+					<key>Replace</key>
+					<data>WFE2QQA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q15,0,N) to XQ15 - F5 brightness down</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -115,13 +125,23 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>Change Method(_Q14,0,N) to XQ14</string>
+					<string>Change Method(_Q14,0,N) to XQ14 - F6 brightness up</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>X1ExNAA=</data>
 					<key>Replace</key>
 					<data>WFExNAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q64,0,N) to XQ64 - F8 wireless</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E2NAA=</data>
+					<key>Replace</key>
+					<data>WFE2NAA=</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
