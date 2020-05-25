@@ -125,6 +125,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>Change Method(_Q16,0,N) to XQ16 - F7 Dual display</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1ExNg==</data>
+					<key>Replace</key>
+					<data>WFExNg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Change Method(_Q64,0,N) to XQ64 - F8 wireless</string>
 					<key>Disabled</key>
 					<false/>
@@ -132,6 +142,46 @@
 					<data>X1E2NAA=</data>
 					<key>Replace</key>
 					<data>WFE2NAA=</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q66,0,N) to XQ66 - F9 settings</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E2Ng==</data>
+					<key>Replace</key>
+					<data>WFE2Ng==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q60,0,N) to XQ60 - F10 bluetooh</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E2MA==</data>
+					<key>Replace</key>
+					<data>WFE2MA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q61,0,N) to XQ61 - F11 keyboard</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E2MQ==</data>
+					<key>Replace</key>
+					<data>WFE2MQ==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Change Method(_Q62,0,N) to XQ62 - F12 star</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E2Mg==</data>
+					<key>Replace</key>
+					<data>WFE2Mg==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
