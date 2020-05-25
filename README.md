@@ -20,5 +20,5 @@ Tested with:
 Clover from https://github.com/CloverHackyColor/CloverBootloader
 
 Optional - ThinkpadAssistant from https://github.com/MSzturc/ThinkpadAssistant
-* F4 key : Mute/Unmute microphone, with LED
-* F8 key : Activate/Deactivate Wi-Fi
+- F4 key : Mute/Unmute microphone, with LED
+- F7:dual diplay, F8:Wi-Fi, F9:preferences, F10:bluetooth, F11:keyboard & F12:launchpad

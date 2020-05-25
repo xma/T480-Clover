@@ -29,6 +29,10 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_KBD", 0x00000000)
     External (\_SB.PCI0.LPCB.EC.XQ6A, MethodObj)
     External (\_SB.PCI0.LPCB.EC.XQ16, MethodObj)
     External (\_SB.PCI0.LPCB.EC.XQ64, MethodObj)
+    External (\_SB.PCI0.LPCB.EC.XQ66, MethodObj)
+    External (\_SB.PCI0.LPCB.EC.XQ60, MethodObj)
+    External (\_SB.PCI0.LPCB.EC.XQ61, MethodObj)
+    External (\_SB.PCI0.LPCB.EC.XQ62, MethodObj)
 
 
     Scope (\_SB.PCI0.LPCB.EC)
@@ -79,6 +83,19 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_KBD", 0x00000000)
             }
         }
 
+        // _Q16 - (Fn+F7) dual display
+        Method(_Q16, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                Notify (\_SB.PCI0.LPCB.KBD, 0x0367)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC.XQ16 ()
+            }
+        }
+
         // _Q64 - (Fn+F8) Wireless disable key.
         Method(_Q64, 0, NotSerialized)
         {
@@ -94,6 +111,68 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_KBD", 0x00000000)
                 \_SB.PCI0.LPCB.EC.XQ64 ()
             }
         }
+
+        // _Q66 - (Fn+F9) settings
+        Method(_Q66, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                Notify (\_SB.PCI0.LPCB.KBD, 0x0369)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC.XQ66 ()
+            }
+        }
+
+        // _Q60 - (Fn+F10) bluetooth
+        Method(_Q60, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                Notify (\_SB.PCI0.LPCB.KBD, 0x012A)
+                Notify (\_SB.PCI0.LPCB.KBD, 0x0368)
+                Notify (\_SB.PCI0.LPCB.KBD, 0x01AA)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC.XQ60 ()
+            }
+        }
+
+        // _Q61 - (Fn+F11) keyboard
+        Method(_Q61, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                // Send a down event for the Control key (scancode 1d), then a one-shot event (down then up) for
+                // the up arrow key (scancode 0e 48), and finally an up event for the Control key (break scancode 9d).
+                // This is picked up by VoodooPS2 and sent to macOS as the Control+Up key combo for Mission Control.
+                Notify (\_SB.PCI0.LPCB.KBD, 0x011D)
+                Notify (\_SB.PCI0.LPCB.KBD, 0x0448)
+                Notify (\_SB.PCI0.LPCB.KBD, 0x019D)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC.XQ61 ()
+            }
+        }
+
+        // _Q62 - (Fn+F12) star
+        Method(_Q62, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                // Send a one-shot event (down then up) for scancode 6a to keyboard device. This
+                // is picked up by VoodooPS2 and sent to macOS as the F19 key.
+                Notify (\_SB.PCI0.LPCB.KBD, 0x036A)
+            }
+            Else
+            {
+                \_SB.PCI0.LPCB.EC.XQ62 ()
+            }
+        }
+
     }
 }
 
