@@ -16,13 +16,14 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PS2K", 0x00000000)
 
         Name (RMCF, Package ()
         {
+
             "Keyboard", 
             Package ()
             {
                 "Custom PS2 Map", 
-                Package (0x02)
+                Package ()
                 {
-                    Package (0x00){}, 
+                    Package (){}, 
                     "e037=0" // prevent F11 from disabling the trackpad
                 }, 
                 
@@ -30,6 +31,7 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PS2K", 0x00000000)
                 "Swap command and option", 
                 ">n"
             },
+
             // unsure if that would fix slow dual finger scroll
             "Synaptics TouchPad", Package()
             {
@@ -37,15 +39,18 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_PS2K", 0x00000000)
                 "BogusDeltaThreshY", 350,
                 "DivisorX",1,
                 "DivisorY",1,
-                "MomentumScrollThreshY", 7,
-                "MultiFingerHorizontalDivisor", 1,
-                "MultiFingerVerticalDivisor", 1,
+                "MultiFingerVerticalDivisor", 9,
+                "MultiFingerHorizontalDivisor", 9,
+                "MomentumScrollThreshY", 12,
                 "Resolution", 2950,
                 "ScrollDeltaThreshX", 10,
                 "ScrollDeltaThreshY", 10,
                 "ScrollResolution", 2950,
+
+                // Trackpoint sensitivity
+                "MouseMultiplierX", 5,
+                "MouseMultiplierY", 5
             },
         })
     }
 }
-
