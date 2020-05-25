@@ -4,7 +4,7 @@
 <dict>
 	<key>ACPI</key>
 	<dict>
-		<key>DSDT</key>
+	<key>DSDT</key>
 		<dict>
 			<key>Fixes</key>
 			<dict>
@@ -92,16 +92,6 @@
 					<data>FBJfU1RBAA==</data>
 					<key>Replace</key>
 					<data>FBJYU1RBAA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change SLTP to XLTP</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>U0xUUA==</data>
-					<key>Replace</key>
-					<data>WExUUA==</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
@@ -235,16 +225,6 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(_WAK,1,N) to ZWAK, pair with SSDT-PTSWAK.aml</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>X1dBSwE=</data>
-					<key>Replace</key>
-					<data>WldBSwE=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change Method(_WAK,1,S) to ZWAK</string>
 					<key>Disabled</key>
 					<false/>
@@ -272,66 +252,6 @@
 					<data>R0JTVAQ=</data>
 					<key>Replace</key>
 					<data>WEJTVAQ=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Notify (BAT1,0x80) -&gt; BATC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>hkJBVDEKgA==</data>
-					<key>Replace</key>
-					<data>hkJBVEMKgA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Notify (BAT0,0x81) -&gt; BATC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>hkJBVDAKgQ==</data>
-					<key>Replace</key>
-					<data>hkJBVEOagQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Notify (BAT0,0x80) -&gt; BATC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>hkJBVDAKgA==</data>
-					<key>Replace</key>
-					<data>hkJBVEMKgA==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Notify (_SB.PCI0.LPC.EC.BAT1, 0x01) ---&gt; BATC   Battery</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVQxAQ==</data>
-					<key>Replace</key>
-					<data>hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVRDAQ==</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Notify (_SB.PCI0.LPC.EC.BAT1, 0x03) ---&gt; BATC   Battery</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVQxCgM=</data>
-					<key>Replace</key>
-					<data>hlwvBV9TQl9QQ0kwTFBDX0VDX19CQVRDCgM=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>Power button after sleep</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>TlZTUygweDAwKQ==</data>
-					<key>Replace</key>
-					<data>TlZTUygweDAwKQpcX1NCLlBDSTAuTFBDQi5FQy5MRUQgKDB4MDAsIDB4ODApClxfU0IuUENJMC5MUENCLkVDLkxFRCAoMHgwQSwgMHg4MCk=</data>
 				</dict>
 			</array>
 			<key>SlpSmiAtWake</key>
@@ -372,7 +292,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-cdfon lilucpu=8 debug=0x100 dart=0 keepsyms=1 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=1 </string>
+		<string>lilucpu=8 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=1</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
@@ -385,21 +305,6 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>2</integer>
-	</dict>
-	<key>#CPU</key>
-	<dict>
-		<key>C2</key>
-		<true/>
-		<key>C4</key>
-		<true/>
-		<key>C6</key>
-		<true/>
-		<key>FrequencyMHz</key>
-		<integer>1600</integer>
-		<key>Latency</key>
-		<string>0x00FA</string>
-		<key>UseARTFrequency</key>
-		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -423,27 +328,18 @@
 				<key>device-id</key>
 				<data>AqEAAA==</data>
 			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x0)/Pci(0x0,0x0)</key>
+			<key>PciRoot(0x0)/Pci(0x1c,0x6)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>AAPL, slot-name</key>
 				<string>Wlan</string>
 				<key>compatible</key>
-				<string>pci14e4,4331</string>
+				<string>pci14e4,43b1</string>
 				<key>device_type</key>
 				<string>Airport Extreme</string>
 				<key>model</key>
-				<string>DW1820A (BCM4350) 802.11ac Wireless</string>
+				<string>DW1560 (BCM4352) 802.11ac Wireless</string>
 				<key>name</key>
 				<string>Airport</string>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
-			</dict>
-			<key>PciRoot(0x0)/Pci(0x1c,0x6)/Pci(0x0,0x0)</key>
-			<dict>
-				<key>compatible</key>
-				<string>pci14e4,4353</string>
-				<key>pci-aspm-default</key>
-				<integer>0</integer>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x0)</key>
 			<dict>
@@ -456,6 +352,8 @@
 			<dict>
 				<key>layout-id</key>
 				<data>CwAAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1f,0x6)</key>
 			<dict>
@@ -468,21 +366,23 @@
 				<data>AAAWGQ==</data>
 				<key>device-id</key>
 				<data>FhkAAA==</data>
-				<key>framebuffer-con1-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-con1-alldata</key>
-				<data>AQUJAAAIAACHAQAA</data>
-				<key>framebuffer-con2-enable</key>
-				<integer>1</integer>
-				<key>framebuffer-con2-alldata</key>
-				<data>AgQKAAAIAACHAQAA</data>
 				<key>framebuffer-fbmem</key>
 				<data>AACQAA==</data>
 				<key>framebuffer-patch-enable</key>
-				<integer>1</integer>
+				<data>AQAAAA==</data>
 				<key>framebuffer-stolenmem</key>
 				<data>AAAwAQ==</data>
-      </dict>
+				<key>framebuffer-con1-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con1-type</key>
+				<data>AAgAAA==</data>
+				<key>framebuffer-con2-enable</key>
+				<data>AQAAAA==</data>
+				<key>framebuffer-con2-type</key>
+				<data>AAgAAA==</data>
+				<key>hda-gfx</key>
+				<string>onboard-1</string>
+			</dict>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -498,37 +398,6 @@
 	</dict>
 	<key>GUI</key>
 	<dict>
-		<key>Custom</key>
-		<dict>
-			<key>Entries</key>
-			<array>
-				<dict>
-				    <key>CustomLogo</key>
-				    <true/>
-				    <key>Disabled</key>
-				    <true/>
-				    <key>FullTitle</key>
-				    <string>OneFileLinux</string>
-				    <key>Hidden</key>
-				    <false/>
-				    <key>Ignore</key>
-				    <false/>
-				    <key>Image</key>
-				    <string>\EFI\CLOVER\themes\ThinkPad\icons\os_linux.icns</string>
-				    <key>Path</key>
-				    <string>\LINUX\OneFileLinux.efi</string>
-				    <key>Type</key>
-				    <string>Windows</string>
-				    <key>VolumeType</key>
-				    <string>Internal</string>
-				</dict>
-			</array>
-		</dict>
-		<key>#Hide</key>
-		<array>
-			<string>Recovery</string>
-			<string>Preboot</string>
-		</array>
 		<key>Mouse</key>
 		<dict>
 			<key>DoubleClick</key>
@@ -541,7 +410,16 @@
 			<integer>8</integer>
 		</dict>
 		<key>Scan</key>
-		<true/>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<false/>
+			<key>Linux</key>
+			<false/>
+			<key>Tool</key>
+			<true/>
+		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
@@ -567,10 +445,6 @@
 		<true/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>#ForceKextsToLoad</key>
-		<array>
-			<string>\System\Library\Extensions\IONetworkingFamily.kext</string>
-		</array>
 		<key>KernelLapic</key>
 		<true/>
 		<key>KernelPm</key>
@@ -586,18 +460,6 @@
 				<data>ILniAAAADzA=</data>
 				<key>Replace</key>
 				<data>ILniAAAAkJA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable panic kext logging on 10.14 release kernel (credit Vandroiy)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>igKEwHRC</data>
-				<key>MatchOS</key>
-				<string>10.14.x</string>
-				<key>Replace</key>
-				<data>igKEwOtC</data>
 			</dict>
 		</array>
 		<key>KextsToPatch</key>
@@ -615,46 +477,6 @@
 				<string>com.apple.iokit.IOAHCIBlockStorage</string>
 				<key>Replace</key>
 				<data>AAAAAAAAAAAAAAA=</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>RiV1VCUwNHgA</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleBacklight</string>
-				<key>Replace</key>
-				<data>RiV1VHh4eHgA</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>USB Port limit patch 10.14 (credits FredWst)</string>
-				<key>Disabled</key>
-				<true/>
-				<key>Find</key>
-				<data>g/sPD4MDBQAA</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCI</string>
-				<key>Replace</key>
-				<data>g/sPkJCQkJCQ</data>
-			</dict>
-			<dict>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>dkZI/wU=</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelKBLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>60ZI/wU=</data>
 			</dict>
 		</array>
 	</dict>
