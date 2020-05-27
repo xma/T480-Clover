@@ -343,7 +343,7 @@
 	<dict>
 		<key>Arguments</key>
 		<string>lilucpu=8 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=1</string>
-		<key>DefaultVolume</key>
+		<key>#DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
