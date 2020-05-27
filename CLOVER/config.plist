@@ -185,6 +185,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>Change Method(_Q1F,0,N) to XQ1F - Fn+Space keyboard backlight</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1ExRg==</data>
+					<key>Replace</key>
+					<data>WFExRg==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Change Method(GBIF,3,N) to XBIF</string>
 					<key>Disabled</key>
 					<false/>
