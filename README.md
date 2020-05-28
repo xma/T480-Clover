@@ -15,10 +15,22 @@ Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
 * macOS 10.15.5 (19F96)
 * Wireless DW1560, NGFF Broadcom BCM4352 802.11ac with PCID [14e4:43b1]
+* Wireless DW1820a : use config.DW1820a.plist
 * CPU i7-8650U : use https://github.com/stevezhengshiqi/one-key-cpufriend for correct power-state/energy saving
+
+
 
 Clover from https://github.com/CloverHackyColor/CloverBootloader
 
 Optional - ThinkpadAssistant from https://github.com/MSzturc/ThinkpadAssistant
 - F4 key : Mute/Unmute microphone, with LED
 - F7:dual display, F8:Wi-Fi, F9:preferences, F10:bluetooth, F11:keyboard,F12:launchpad & Fn-Space:keyboard backlight
+
+SSD tricks:
+
+*) Disable hibernation (speeds up entering sleep mode)
+sudo pmset -a hibernatemode 0
+
+*) Set hibernatefile to `/dev/null` so it will not be recreated
+sudo pmset -a hibernatefile /dev/null
+
