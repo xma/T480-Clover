@@ -28,9 +28,9 @@ Optional - ThinkpadAssistant from https://github.com/MSzturc/ThinkpadAssistant
 
 SSD tricks:
 
-* Disable hibernation (speeds up entering sleep mode)
+* Disable hibernation (speeds up entering sleep mode)  
 sudo pmset -a hibernatemode 0
 
-* Set hibernatefile to `/dev/null` so it will not be recreated
+* Set hibernatefile to `/dev/null` so it will not be recreated  
 sudo pmset -a hibernatefile /dev/null
 
