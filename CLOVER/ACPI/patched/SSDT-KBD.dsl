@@ -42,6 +42,22 @@ DefinitionBlock ("", "SSDT", 2, "hack", "_KBD", 0x00000000)
         Name (LED1, Zero)
         Name (LED2, Zero)
 
+        Method (WKBD, 0, NotSerialized)
+        {
+            If (_OSI ("Darwin"))
+            {
+                // Toggle Mute Microphone LED
+                If ((LED1 == Zero))
+                {
+                    \_SB.PCI0.LPCB.EC.HKEY.MMTS (Zero)
+                }
+                Else
+                {
+                    \_SB.PCI0.LPCB.EC.HKEY.MMTS (0x02)
+                }
+            }
+        }
+
         Method (_Q14, 0, NotSerialized)  // _Qxx: EC Query
         {
             Notify (\_SB.PCI0.LPCB.KBD, 0x0206)
