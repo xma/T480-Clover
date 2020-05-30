@@ -293,26 +293,6 @@
 					<key>Replace</key>
 					<data>WldBSwk=</data>
 				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>XBIF Battery</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R0JJRgM=</data>
-					<key>Replace</key>
-					<data>WEJJRgM=</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>XBST Battery</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>R0JTVAQ=</data>
-					<key>Replace</key>
-					<data>WEJTVAQ=</data>
-				</dict>
 			</array>
 			<key>SlpSmiAtWake</key>
 			<true/>
