@@ -348,15 +348,6 @@
 	</dict>
 	<key>Devices</key>
 	<dict>
-		<key>Audio</key>
-		<dict>
-			<key>AFGLowPowerState</key>
-			<true/>
-			<key>Inject</key>
-			<integer>11</integer>
-			<key>ResetHDA</key>
-			<false/>
-		</dict>
 		<key>HDMIInjection</key>
 		<false/>
 		<key>Properties</key>
@@ -391,7 +382,7 @@
 			<key>PciRoot(0x0)/Pci(0x1f,0x3)</key>
 			<dict>
 				<key>layout-id</key>
-				<data>CwAAAA==</data>
+				<data>VgAAAA==</data>
 				<key>hda-gfx</key>
 				<string>onboard-1</string>
 			</dict>
