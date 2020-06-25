@@ -10,6 +10,7 @@ Working (compared to other setup I've found):
 * Fixed LED blinking after WAKE/SLEEP
 * FAN speed in HWMonitor
 * No color banding, Display is correctly seen as 24-Bit Color (ARGB8888) : issue reported by @bugraduz 
+* HDMI output enabled automatically at boot/wake : issue reported by @opatotto
 
 Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
