@@ -195,6 +195,16 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>Change Method(_Q74,0,N) to XQ74 - Fn+ESC</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>X1E3NA==</data>
+					<key>Replace</key>
+					<data>WFE3NA==</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>Change Method(GBIF,3,N) to XBIF</string>
 					<key>Disabled</key>
 					<false/>
