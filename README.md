@@ -25,6 +25,7 @@ Clover from https://github.com/CloverHackyColor/CloverBootloader
 Optional - ThinkpadAssistant from https://github.com/MSzturc/ThinkpadAssistant
 - F4 key : Mute/Unmute microphone, with LED
 - F7:dual display, F8:Wi-Fi, F9:preferences, F10:bluetooth, F11:keyboard,F12:launchpad & Fn-Space:keyboard backlight
+- Fn+ESC : switch function/media keys
 
 SSD tricks:
 
