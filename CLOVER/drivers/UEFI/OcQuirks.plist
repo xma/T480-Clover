@@ -30,6 +30,8 @@
 	<true/>
 	<key>ProvideCustomSlide</key>
 	<true/>
+	<key>ProvideMaxSlide</key>
+	<integer>0</integer>
 	<key>RebuildAppleMemoryMap</key>
 	<false/>
 	<key>SetupVirtualMap</key>
@@ -37,6 +39,6 @@
 	<key>SignalAppleOS</key>
 	<false/>
 	<key>SyncRuntimePermissions</key>
-	<false/>
+	<true/>
 </dict>
 </plist>
