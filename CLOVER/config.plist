@@ -2,6 +2,82 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>Quirks</key>
+	<dict>
+		<key>AppleCpuPmCfgLock</key>
+		<true/>
+		<key>AppleXcpmCfgLock</key>
+		<false/>
+		<key>AppleXcpmExtraMsrs</key>
+		<false/>
+		<key>AppleXcpmForceBoost</key>
+		<false/>
+		<key>AvoidRuntimeDefrag</key>
+		<true/>
+		<key>CustomSMBIOSGuid</key>
+		<false/>
+		<key>DevirtualiseMmio</key>
+		<true/>
+		<key>DisableIoMapper</key>
+		<true/>
+		<key>DisableLinkeditJettison</key>
+		<true/>
+		<key>DisableRtcChecksum</key>
+		<true/>
+		<key>DisableSingleUser</key>
+		<false/>
+		<key>DisableVariableWrite</key>
+		<false/>
+		<key>DiscardHibernateMap</key>
+		<false/>
+		<key>DummyPowerManagement</key>
+		<false/>
+		<key>EnableSafeModeSlide</key>
+		<true/>
+		<key>EnableWriteUnprotector</key>
+		<true/>
+		<key>ExternalDiskIcons</key>
+		<false/>
+		<key>ForceExitBootServices</key>
+		<false/>
+		<key>FuzzyMatch</key>
+		<true/>
+		<key>IncreasePciBarSize</key>
+		<false/>
+		<key>KernelCache</key>
+		<string>Auto</string>
+		<key>LapicKernelPanic</key>
+		<false/>
+		<key>PanicNoKextDump</key>
+		<true/>
+		<key>PowerTimeoutKernelPanic</key>
+		<true/>
+		<key>ProtectMemoryRegions</key>
+		<false/>
+		<key>ProtectSecureBoot</key>
+		<false/>
+		<key>ProtectUefiServices</key>
+		<false/>
+		<key>ProvideConsoleGopEnable</key>
+		<true/>
+		<key>ProvideCustomSlide</key>
+		<true/>
+		<key>ProvideMaxSlide</key>
+		<integer>0</integer>
+		<key>RebuildAppleMemoryMap</key>
+		<true/>
+		<key>SetupVirtualMap</key>
+		<true/>
+		<key>SignalAppleOS</key>
+		<false/>
+		<key>SyncRuntimePermissions</key>
+		<true/>
+		<key>ThirdPartyDrives</key>
+		<true/>
+		<key>XhciPortLimit</key>
+		<false/>
+	</dict>
+
 	<key>ACPI</key>
 	<dict>
 	<key>DSDT</key>
@@ -318,6 +394,31 @@
 				<string>DMAR</string>
 			</dict>
 		</array>
+		<key>SortedOrder</key>
+		<array>
+			<string>SSDT-EXT4-WakeScreen.aml</string>
+			<string>SSDT-PS2K.aml</string>
+			<string>SSDT-BATC.aml</string>
+			<string>SSDT-KBD.aml</string>
+			<string>SSDT-XOSI.aml</string>
+			<string>SSDT-USBX.aml</string>
+			<string>SSDT-UIAC.aml</string>
+			<string>SSDT-RMCF.aml</string>
+			<string>SSDT-PWRB.aml</string>
+			<string>SSDT-PTSWAK.aml</string>
+			<string>SSDT-PNLF.aml</string>
+			<string>SSDT-MEM2.aml</string>
+			<string>SSDT-MCHC.aml</string>
+			<string>SSDT-LPC.aml</string>
+			<string>SSDT-HPET.aml</string>
+			<string>SSDT-GPRW.aml</string>
+			<string>SSDT-GLAN.aml</string>
+			<string>SSDT-DMAC.aml</string>
+			<string>SSDT-DDGPU.aml</string>
+			<string>SSDT-CODEC.aml</string>
+			<string>SSDT-BATT.aml</string>
+			<string>SSDT-ALS0.aml</string>
+		</array>
 		<key>FixHeaders</key>
 		<false/>
 		<key>SSDT</key>
@@ -343,8 +444,10 @@
 	<dict>
 		<key>Arguments</key>
 		<string>lilucpu=8 igfxonln=1 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=1</string>
-		<key>#DefaultVolume</key>
+		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
+		<key>IgnoreNVRAMBoot</key>
+		<false/>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>NeverHibernate</key>
@@ -584,7 +687,7 @@
 		<key>#CustomUUID</key>
 		<string></string>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
