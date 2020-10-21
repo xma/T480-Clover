@@ -691,5 +691,8 @@
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>
+	<key>CPU</key>
+	<dict>
+	</dict>
 </dict>
 </plist>
