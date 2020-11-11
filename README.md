@@ -14,7 +14,7 @@ Working (compared to other setup I've found):
 
 Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
-* macOS 10.15.7 (19H15)
+* macOS 11.0.1 (20B28)
 * Wireless DW1560, NGFF Broadcom BCM4352 802.11ac with PCID [14e4:43b1]
 * Wireless DW1820a : use config.DW1820a.plist
 * CPU i7-8650U : use https://github.com/stevezhengshiqi/one-key-cpufriend for correct power-state/energy saving

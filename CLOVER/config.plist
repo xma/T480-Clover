@@ -443,7 +443,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>lilucpu=8 igfxonln=1 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=1</string>
+		<string>lilucpu=8 igfxonln=1 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=2</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>IgnoreNVRAMBoot</key>
