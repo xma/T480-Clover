@@ -1,5 +1,5 @@
-<div><img src="neofetch.png" align="left"/><h1>Lenovo ThinkPad T480 hackintosh</h1></div>
-
+<h1>Lenovo ThinkPad T480 hackintosh</h1>
+<img src="neofetch.png" align="left"/>
 
 Working (compared to other setup I've found):
 
@@ -34,4 +34,3 @@ sudo pmset -a hibernatemode 0
 
 * Set hibernatefile to `/dev/null` so it will not be recreated  
 sudo pmset -a hibernatefile /dev/null
-
