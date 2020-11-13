@@ -1,5 +1,5 @@
 <h1>Lenovo ThinkPad T480 hackintosh</h1>
-<img src="neofetch.png" align="left"/>
+<div style="text-align:center"><img src="neofetch.png"/></div>
 
 Working (compared to other setup I've found):
 
