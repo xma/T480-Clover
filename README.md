@@ -7,7 +7,7 @@ Working (compared to other setup I've found):
 * Physical mouse buttons with VoodooPS2
 * Brightness Hotkey F5,F6
 * Fixed LED blinking after WAKE/SLEEP
-* FAN speed in HWMonitor
+* ~FAN speed in HWMonitor~ (missing since move to VirtualSMC instead of FakeSMC)
 * No color banding, Display is correctly seen as 24-Bit Color (ARGB8888) : issue reported by @bugraduz 
 * HDMI output enabled automatically at boot/wake : issue reported by @opatotto
 
