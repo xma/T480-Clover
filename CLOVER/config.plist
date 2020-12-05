@@ -398,7 +398,6 @@
 		<array>
 			<string>SSDT-EXT4-WakeScreen.aml</string>
 			<string>SSDT-PS2K.aml</string>
-			<string>SSDT-BATC.aml</string>
 			<string>SSDT-KBD.aml</string>
 			<string>SSDT-XOSI.aml</string>
 			<string>SSDT-USBX.aml</string>
@@ -416,8 +415,10 @@
 			<string>SSDT-DMAC.aml</string>
 			<string>SSDT-DDGPU.aml</string>
 			<string>SSDT-CODEC.aml</string>
-			<string>SSDT-BATT.aml</string>
+			<string>SSDT-Battery.aml</string>
 			<string>SSDT-ALS0.aml</string>
+			<string>SSDT-EC.aml</string>
+			<string>SSDT-DYTC-Tx80.aml</string>
 		</array>
 		<key>FixHeaders</key>
 		<false/>
@@ -443,7 +444,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>lilucpu=8 igfxonln=1 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=2 io80211.awdl=0 igfxcflbklt=0</string>
+		<string>igfxcflbklt=0 lilucpu=8 igfxonln=1 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=2 io80211.awdl=0</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>IgnoreNVRAMBoot</key>
@@ -458,6 +459,8 @@
 		<false/>
 		<key>Timeout</key>
 		<integer>2</integer>
+		<key>Debug</key>
+		<false/>
 	</dict>
 	<key>Devices</key>
 	<dict>
