@@ -10,6 +10,7 @@ Working (compared to other setup I've found):
 * ~FAN speed in HWMonitor~ (Fan speed is correctly reported within YogaSMCNC)
 * No color banding, Display is correctly seen as 24-Bit Color (ARGB8888) : issue reported by @bugraduz 
 * HDMI output enabled automatically at boot/wake : issue reported by @opatotto
+* No sound distortion with headphones : issue reported by @bugraduz, fixed with ComboJack for alc257 https://github.com/hackintosh-stuff/ComboJack/commit/28e35e5f8613195aff627d78362ee3f4cd8397a3
 
 Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
@@ -21,6 +22,9 @@ Tested with:
 
 
 Clover from https://github.com/CloverHackyColor/CloverBootloader
+
+ComboJack https://github.com/hackintosh-stuff/ComboJack
+- Handle events related to headphones/line-in
 
 Optional - ThinkpadAssistant from https://github.com/MSzturc/ThinkpadAssistant
 - F4 key : Mute/Unmute microphone, with LED
