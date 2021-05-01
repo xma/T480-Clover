@@ -32,7 +32,7 @@ DefinitionBlock("", "SSDT", 2, "OCLT", "EXT4", 0)
 
             If (CondRefOf ( \_SB.PCI0.LPCB.EC.WKBD))
             {
-                \_SB.PCI0.LPCB.EC.WKBD ()
+//                \_SB.PCI0.LPCB.EC.WKBD ()
             }
         }
     }
