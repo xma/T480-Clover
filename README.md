@@ -17,9 +17,10 @@ Tested with:
 * macOS 12.0.1 (21A559)
 * Wireless DW1560, NGFF Broadcom BCM4352 802.11ac with PCID [14e4:43b1]
 * Wireless DW1820a : use config.DW1820a.plist
+* Wireless BCM94360NG : use config.BCM94360NG.plist (reported by @opatotto #16)
 * CPU i7-8650U : use https://github.com/stevezhengshiqi/one-key-cpufriend for correct power-state/energy saving
 
-
+If you're using AirDrop (file sharing with another apple product), remove "io80211.awdl=0" from config.plist
 
 Clover from https://github.com/CloverHackyColor/CloverBootloader
 
