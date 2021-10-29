@@ -445,7 +445,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>igfxcflbklt=0 lilucpu=8 igfxonln=1 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=2 io80211.awdl=0</string>
+		<string>-igfxbls lilucpu=8 igfxonln=1 dart=0 bpr_probedelay=100 bpr_initialdelay=300 bpr_postresetdelay=300 brcmfx-country=#a -hbfx-dump-nvram brcmfx-driver=2 io80211.awdl=0</string>
 		<key>DefaultVolume</key>
 		<string>LastBootedVolume</string>
 		<key>#IgnoreNVRAMBoot</key>
