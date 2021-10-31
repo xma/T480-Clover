@@ -42,3 +42,11 @@ sudo pmset -a hibernatemode 0
 
 * Set hibernatefile to `/dev/null` so it will not be recreated  
 sudo pmset -a hibernatefile /dev/null
+
+Untested:
+built-in intel wireless & bluetooth should work
+remove AirportBrcmFixup.kext, BrcmFirmwareData.kext and BrcmPatchRAM3.kext
+put itlwm.kext and IntelBluetoothFirmware.kext
+https://github.com/OpenIntelWireless/itlwm
+https://github.com/OpenIntelWireless/IntelBluetoothFirmware
+
