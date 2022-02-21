@@ -419,7 +419,7 @@
 			<string>SSDT-BATT.aml</string>
 			<string>SSDT-ALS0.aml</string>
 			<string>SSDT-DYTC-Tx80.aml</string>
-			<string>SSDT-EC.aml</string>
+			<string>SSDT-DYTC.aml</string>
 		</array>
 		<key>FixHeaders</key>
 		<false/>
