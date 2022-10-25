@@ -1,5 +1,8 @@
-<h1>Lenovo ThinkPad T480 hackintosh</h1>
-<div style="text-align:center"><img src="neofetch.png"/></div>
+# Lenovo ThinkPad T480 hackintosh
+
+![lenovo-t480-hackintosh-macos-ventura](neofetch.png)
+
+# macOS Ventura
 
 Working (compared to other setup I've found):
 
