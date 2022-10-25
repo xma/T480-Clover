@@ -14,7 +14,7 @@ Working (compared to other setup I've found):
 
 Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
-* macOS 12.5 (21G72)
+* macOS 13.0 (22A380)
 * Wireless DW1560, NGFF Broadcom BCM4352 802.11ac with PCID [14e4:43b1]
 * Wireless DW1820a : use config.DW1820a.plist
 * Wireless BCM94360NG : use config.BCM94360NG.plist (reported by @opatotto #16)
