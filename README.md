@@ -17,7 +17,7 @@ Working (compared to other setup I've found):
 
 Tested with:
 * T480 i7-8650U FHD, 32GB RAM, NVME, nvidia MX150 deactivated in DSDT/SSDT
-* macOS 13.3.1 (22E772610a)
+* macOS 13.4 (22F66)
 * Wireless DW1560, NGFF Broadcom BCM4352 802.11ac with PCID [14e4:43b1]
 * Wireless DW1820a : use config.DW1820a.plist
 * Wireless BCM94360NG : use config.BCM94360NG.plist (reported by @opatotto #16)
@@ -53,3 +53,5 @@ put itlwm.kext and IntelBluetoothFirmware.kext
 https://github.com/OpenIntelWireless/itlwm  
 https://github.com/OpenIntelWireless/IntelBluetoothFirmware  
 
+If partial/incremental software update fails:
+$ softwareupdate --fetch-full-installer --full-installer-version 13.4
